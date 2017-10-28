@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Part_01</title>
+</head>
+<body>
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="post">
+<fieldset><legend><p>Your Face</p></legend>
+<p><label for="img">Your Image:</label>
+<input type="file" id="preview" name:"uploadFile" required></p><br>
+<p>Image Preview:</p></fieldset>
+<fieldset><legend><p>Your General Details</p></legend>
+<p><label for="name">Name:</label>
+<input type="text" id="name" name:"name" placeholder="Your full name" required></p><br>
+<p><label for="gen">Gender:</label>
+<input type="radio" id="gen" name="gender" value="M" required>Male
+<input type ="radio" id="gen" name="gender" value="F" required>Female</p><br>
+<p><label for="age">Age</label>
+<input type="number" id="age" name:"age" value="18" min="15" max="60" required></p><br>
+<p><label for="birth">Date of Birth:</label>
+<input type="date" name="dob" id="birth"></p><br>
+<p><label for="color">Favorite color:</label>
+<input type="color" name="favrc" id="color"></p><br>
+<p><label for="country">Which Country:</label>
+<select>
+<option value="arg" name="A">Argentina
+<option value="brz" name="B">Brazil
+<option value="chn" name="C">China
+<option value="den" name="D">Denmark
+<option value="ind" name="I">India
+</select></p></fieldset>
+<fieldset><legend><p>Your Indicators</p></legend>
+<p><label for="hgt">Height:</label>
+<span style="color:white;background:red">Short</span>
+<input type="range" id="hgt" min="0" max="100" step="5" value="50" name="hgt"><span style="color:white;background:purple">Tall</span></p><br>
+<p><label for:"sal">Salary:</label>
+<span style="color:white;background:red">Poor</span>
+<input type="range" min="0" max="100" step="5" value="50" name="sal" id="sal"><span style="color:white;background:purple">Rich</span></p><br>
+</fieldset>
+<fieldset><legend>Your Contact Information</legend>
+<p><label for:"email">Email:</label>
+<input type="email" name="email" id="email"></p><br>
+<p><label for="tel">Mobile</label>
+<input type="tel" id="tel" name="tel"></p><br>
+<p><label for="addrs"><span style="vertical-align: text-top">Address:</span></label>
+<textarea rows="5" cols="50" name="address" id="addrs">
+</textarea>
+</p><br>
+<p><label for="methods>Methods to contact you:</label>
+<input type="checkbox" name="methods" id="methods" value="email">Email
+<input type="checkbox" name="methods" id="methods" value="Whatsapp">Whatsapp
+<input type="checkbox" name="methods" id="methods" value="In-app chat">In-app chat</p><br>
+</fieldset>
+<input type="submit" name="Submit"> 
+</form>
+</body>
+</html>
